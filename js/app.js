@@ -54,32 +54,71 @@ discount3.innerHTML = '50% OFF Axe body soap!';
 var block3 = document.getElementsByClassName('block3');
 block3[0].appendChild(discount3);
 //9. Target the div element with a class of 'item' for the Panda Express section and update the content to Orange Chicken.
+var pandaItem = document.getElementsByClassName('item')
+pandaItem[0].innerHTML = 'Orange Chicken';
 
 //10. Create a button element with a class of 'discount' and update the content to Free T-shirt and fortune cookie with purchase! Append this button to Panda Express section.
-
+var discounts = document.createElement('button');
+discounts.className = 'discount';
+discounts.innerHTML = 'Free T-shirt and fortune cookie with purchase!';
+pandaItem[0].appendChild(discounts);
 //11. Target the div element with the class of 'brand' for the red hoodie section and update the content to Uniqlo.
+var brand = document.getElementsByClassName('brand');
+brand[1].innerHTML = 'Uniqlo';
 
 //12. Target the div element with the class of 'price' for the red hoodie section and update the content to 10,000. 
+var price = document.getElementsByClassName('price');
+price[1].innerHTML = '10,000'
 
 //13. Create a div element with the class of 'brand' and give it a content of Hifiman Shangri-La. Append this element in the headphones section. 
+var brandHif = document.createElement('div');
+brandHif.innerHTML = 'Hifiman Shangri-La';
+block3[1].appendChild(brandHif);
+
 
 //14. Create a div element with the class of 'item' and give it a content of Electronstatic Headphones. Append this element in the headphones section. 
+var itemm = document.createElement('div');
+itemm.className = 'item';
+itemm.innerHTML = 'Electronstatic Headphones';
+block3[1].appendChild(itemm);
+
 
 //15. Create a div element with the class of 'price' and give it a content of $18,000. Append this element in the headphones section.
+var pricee = document.createElement('div');
+pricee.className = 'price';
+pricee.innerHTML = '$18,000';
+block3[1].appendChild(pricee);
 
 //16. Create a button element with the class of 'discount' and give it a content of Free Barry Manilow CD with purchase! Append this element in the headphones section.
+var disc = document.createElement('button');
+disc.className = 'discount';
+disc.innerHTML = 'Free Barry Manilow CD with purchase!'
+block3[1].appendChild(disc);
 
 //17. For the Unicorn Slippers, change the contents for each element to the following: 
 //div.brand = H&M
 //div.item =  Unicorn-Head Slippers
 //div.price = $21.99
 // button.discount = Free knee-high tube socks with purchase!
+console.log(brand)
+var item = document.getElementsByClassName('item')
+var discount = document.getElementsByClassName('discount')
+console.log(item)
+console.log(price)
+console.log(discount)
+brand[2].innerHTML = 'H&M';
+item[3].innerHTML = 'Unicorn-Head Slippers';
+price[3].innerHTML = '$21.99';
+discount[3].innerHTML = 'Free knee-high tube socks with purchase!'
+
 
 //18. For the Doritos, change the contents for each element to the following:
 //div.brand = Frito Lay
 //div.item =  Poppin' Jalapeno Doritos
 //div.price = $7.77
 // button.discount = 33% OFF any 6 pack Budweiser or Bud Light.
+brand[3].innerHTML = 'Frito Lay';
+
 
 //19. For the Pug, change the contents for each element to the following:
 //div.brand = Any Dog Breeder
