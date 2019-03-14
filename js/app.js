@@ -6,20 +6,53 @@
 
 var finePrint = 'Coupons VALID from Tuesday 12/4/2018 thru Saturday 6/29/2019. All sales FINAL. NO REFUNDS and EXCHANGES. And definitely NO RAINCHECKS! And ONLY POSITIVE reviews allowed on Social Media (FB, Instagram, Twitter, Yelp, etc.). And PLEASE Follow us on FB, Instagram, Twitter.'
 
-//2. Target the div elemenet with the id of 'brand1' and update the content to Nabisco.
+var disc = document.getElementById('disclaimer');
+disc.innerHTML = finePrint;
+
+//2. Target the div elemenet with the id of 'brand1' and update the content to Nabisco.\
+
+var brand1 = document.getElementById('brand1')
+brand1.innerHTML = 'Nabisco'
 
 //3. Target the div element with the id of 'item1' and update the content with Cheeseburger Oreos. 
 
+var item1 = document.getElementById('item1');
+item1.innerHTML = 'Cheeseburger Oreos';
+
 //4. Target the div element with the id of 'price1' and update the content to $8.99.
+var price1 = document.getElementById('price1');
+price1.innerHTML = '$8.99'
 
 //5. Target the button element with the id of 'discount1' and update the content to Free fries with purchase!
 
+var discount1 = document.getElementById('discount1');
+discount1.innerHTML = 'Free fries with purchase!'
+
 //6. Create a div element with the id of 'item2' and update the content to Hendrick's Gin. Append this element to William Grand & Sons div.
+var item2 = document.createElement('div')
+item2.id = 'item2'
+item2.innerHTML = "Hendrick's Gin";
+
+var brand2 = document.getElementById('brand2');
+brand2.appendChild(item2);
 
 //7. Create a div element with the id of 'price2' and update the content to $34.99. Append this element to the Hendrick's Gin div.
 
+var price2 = document.createElement('div');
+price2.id = 'price2';
+price2.innerHTML = '$34.99';
+item2.appendChild(price2);
+
+
+
+
 //8. Create a button element with the id of 'discount3' and give it a content of 50% OFF Axe body soap!. Append this element to the appropriate div class 'block3.
 
+var discount3 = document.createElement('button');
+discount3.id = 'discount3';
+discount3.innerHTML = '50% OFF Axe body soap!';
+var block3 = document.getElementsByClassName('block3');
+block3[0].appendChild(discount3);
 //9. Target the div element with a class of 'item' for the Panda Express section and update the content to Orange Chicken.
 
 //10. Create a button element with a class of 'discount' and update the content to Free T-shirt and fortune cookie with purchase! Append this button to Panda Express section.
