@@ -43,7 +43,7 @@ price2.id = 'price2';
 price2.innerHTML = '$34.99';
 item2.appendChild(price2);
 
-
+var images = document.getElementsByTagName('img');
 
 
 //8. Create a button element with the id of 'discount3' and give it a content of 50% OFF Axe body soap!. Append this element to the appropriate div class 'block3.
@@ -140,6 +140,8 @@ item[6].innerHTML = 'Buffalo Chicken Mac and Cheese';
 price[6].innerHTML = 'Small kine expensive';
 discount[6].innerHTML = '17% off with coupon cuz'
 
+images[10].src = 'https://www.momontimeout.com/wp-content/uploads/2018/10/homemade-mac-and-cheese-recipe-titled.jpg'
+
 
 var block2 = document.getElementsByClassName('block2');
 console.log(block2)
@@ -161,6 +163,39 @@ block2[3].appendChild(firstPrice);
 
 var firstDisc = document.createElement('button');
 firstDisc.className = 'discount';
-firstDisc.innnerHTML = '6 Free Gallons of milk upon purchase!';
+// firstDisc.innnerHTML = '6 Free Gallons of milk upon purchase!';
 block2[3].appendChild(firstDisc);
+// images[11].src = 'http://carlandjinger.com/wp-content/uploads/2017/10/eating-worlds-hottest-pepper-chi.jpg'
 
+brand[6].innerHTML = 'Whole Foods';
+item[7].innerHTML = 'Buffalo Chicken Mac and Cheese';
+price[7].innerHTML = 'Small kine expensive';
+discount[7].innerHTML = '17% off with coupon cuz'
+
+// final boss part 2
+console.log(block3)
+var secBrand = document.createElement('div');
+secBrand.className = 'brand';
+secBrand.innerHTML = 'NASA';
+block3[3].appendChild(secBrand);
+
+var secItem = document.createElement('div');
+secItem.className = 'item';
+secItem.innerHTML = 'Alien guy';
+block3[3].appendChild(secItem);
+
+var secPrice = document.createElement('div');
+secPrice.className = 'price';
+secPrice.innerHTML = 'brah no price this guys gonna abduct you';
+block3[3].appendChild(secPrice);
+
+var secBut = document.createElement('button');
+secBut.className = 'discount';
+secBut.innerHTML = 'I hope he doesnt have a probe';
+block3[3].appendChild(secBut);
+
+
+images[12].src = 'https://images-na.ssl-images-amazon.com/images/I/5167B0JEilL._SY550_.jpg'
+console.log(images)
+
+images[2].src = 'https://dydza6t6xitx6.cloudfront.net/ci-hendricks-gin-d1d68ad95a63a898.png'
