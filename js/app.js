@@ -118,13 +118,32 @@ discount[3].innerHTML = 'Free knee-high tube socks with purchase!'
 //div.price = $7.77
 // button.discount = 33% OFF any 6 pack Budweiser or Bud Light.
 brand[3].innerHTML = 'Frito Lay';
-
+item[4].innerHTML = 'Poppin Jalapeno Doritos';
+price[4].innerHTML = '$7.77';
+discount[4].innerHTML = '33% OFF any 6 pack Budweiser or Bud Light'
 
 //19. For the Pug, change the contents for each element to the following:
 //div.brand = Any Dog Breeder
 //div.item =  Baby Puggy
 //div.price = Priceless
 // button.discount = No Discounts. This cutie is worth every penny!
+brand[4].innerHTML = 'Any Dog Breeder';
+item[5].innerHTML = 'Baby Puggy';
+price[5].innerHTML = 'Priceless';
+discount[5].innerHTML = 'No Discounts. This cutie is worth every penny!'
 
 //Final Boss 
 //Create your own product for the last three sections.
+
+brand[5].innerHTML = 'Whole Foods';
+item[6].innerHTML = 'Buffalo Chicken Mac and Cheese';
+price[6].innerHTML = 'Small kine expensive';
+discount[6].innerHTML = '17% off with coupon cuz'
+
+
+var block2 = document.getElementsByClassName('block2');
+console.log(block2)
+
+var firstBrand = document.createElement('div');
+firstBrand.innerHTML = 'Doritos';
+block2[3].appendChild(firstBrand);
