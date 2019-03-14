@@ -146,4 +146,21 @@ console.log(block2)
 
 var firstBrand = document.createElement('div');
 firstBrand.innerHTML = 'Doritos';
+firstBrand.className = 'brand'
 block2[3].appendChild(firstBrand);
+
+var firstItem = document.createElement('div');
+firstItem.className = 'item';
+firstItem.innerHTML = 'Ghost Pepper Chips';
+block2[3].appendChild(firstItem);
+
+var firstPrice = document.createElement('div');
+firstPrice.className = 'price';
+firstPrice.innerHTML = '$666.66';
+block2[3].appendChild(firstPrice);
+
+var firstDisc = document.createElement('button');
+firstDisc.className = 'discount';
+firstDisc.innnerHTML = '6 Free Gallons of milk upon purchase!';
+block2[3].appendChild(firstDisc);
+
